@@ -11,7 +11,6 @@ const LoginForm = () => {
   const [error, setError] = useState('');
   const { login } = useAuth();
   const navigate = useNavigate();
-
   const handleLogin = async (event) => {
     event.preventDefault();
     try {
