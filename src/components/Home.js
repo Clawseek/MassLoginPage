@@ -1,9 +1,10 @@
 // src/components/Home.js
-import React from 'react';
+import React, { useState } from 'react';
 import useAuth from '../hooks/useAuth';
 
 const Home = () => {
   const { logout } = useAuth();
+
 
   return (
     <div className="container mt-5">
@@ -11,7 +12,9 @@ const Home = () => {
       <button className="btn btn-primary mt-3" onClick={logout}>
         Logout
       </button>
+    
     </div>
+    
   );
 };
 
